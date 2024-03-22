@@ -1,0 +1,3 @@
+Đệ Qui 
+A0 gọi A1 truyền tham số theo chiều sâu khi kết thúc thì đi theo chiều ngược lại 
+Xác định lượt đi/lượt về

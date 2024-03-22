@@ -1,0 +1,19 @@
+1. Bắt buộc sử dụng đệ quy
+2. Không sử dụng biến phụ 
+3. Sử dụng dưới dạng số
+
+ex1: Viết hàm hiển thị 1 số nhị phân khi nhận vào 1 số tự nhiên. dee2Bin(int n), vd: n = 6 => 101?
+ex2: Viết phương thức nhận vào 1 số tự nhiên bất kì trả về số chữ số, vd: 100 là 3 ?
+ex3: Viết 1 hàm nhận vào 1 số, trả về đảo ngược lại chuỗi ?
+
+ex1: Parram		Action
+     n = 6        |   Chia lay du cho 2 = 0
+     n = 3        |   1
+     n = 0        |   1
+     
+	public void dec2Bin(int n){
+	 if(n<2) print(n) return;
+	 dec2Bin(n/2);
+	 print(n%2);
+ex2: n < 10 hang don vi la 1 
+ex3: n = 0 return p(n%10), n/10, n<10 p(n)
