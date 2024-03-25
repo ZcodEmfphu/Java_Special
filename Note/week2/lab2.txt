@@ -1,0 +1,7 @@
+file text, password (mã hóa 1 file text bất kì bằng 1 mật khẩu bất kì)
+mã hóa textfile bằng password sử dụng XOR
+encrypt(st textFile, st encFile, st password)
+
+A   0 0 1 1
+B   0 1 0 1
+XOR 0 0 0 1
