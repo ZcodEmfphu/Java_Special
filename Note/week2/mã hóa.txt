@@ -1,0 +1,45 @@
+file text, password (mã hóa 1 file text bất kì bằng 1 mật khẩu bất kì)
+mã hóa textfile bằng password sử dụng XOR
+encrypt(st textFile, st encFile, st password)
+
+A   0 0 1 1
+B   0 1 0 1
+XOR 0 0 0 1
+
+1. Chuyển File input vào 1 mảng
+2. Tạo file desk
+3. chuyển mật khẩu thành mảng
+4. Chuyển mảng về nhị phân
+5. Chuyển password về nhị phân
+6. áp dụng thuật toán Xor, Xor với nhau nếu 1 + 1 trả về 1 còn lại trả về 0
+7. đếm kí tự của file text
+8. lấy mảng.lengh / pass.size ra số lần lặp lại 
+9. ra được kết quả bằng việc XOR vào mảng
+10. In ra kết quả vào file desk
+
+
+đ dùng readAllByte 
+content --> number
+pass --> number
+String ---> number dùng FileInputStream
+File  ----> number 
+tạo 1 mảng byte
+index%len
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
