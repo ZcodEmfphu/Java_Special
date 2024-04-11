@@ -1,0 +1,49 @@
+1. Contructo MyDate(int d, int m, int y)
+2. toString => dd/mm/yyyy
+3. 3 setter/getter
+
+class MyDate{
+	int date;
+}
+
+int compareTo(MyDate that){
+this.date - that.date;f
+}
+nếu phân tích thì phân tích phần tử ở giữa
+m = 12 (1100) [_ _ _ _ _ _ _ _1101] << 5
+			  [_ _ _ _ MMMM_ _ _ _] d  or
+			  date |= m << 5
+			  setMonth(8) 1000 |
+			  setMonth(14) 80% dữ liệu đúng      15%sai       5% vô nghĩa
+			  4 bit của month = 0 còn lại giữ nguyên 
+			  mask tác động lên khu vực này mà k tác động lên khu vực khác
+			  80 20 (quản lý) 
+			  >> 5 dịch sang phải  mask(15) 4 bit số 1 
+			  
+			  
+			  
+			  Boolean b1 = true; không lỗi vì là lớp Bao mỗi kiểu dữ liệu nguyên thủy đều có 1 lớp
+			  boolean b2 = fasle; 
+			  boolean b3 = true;
+			  
+			  if((b1&b2) | (b2&b3) & b3)
+			     sysout("Alpha");
+			  if(b1=false) | (b1&b3) | (b1|b2) khái niệm biểu thức expression phép tính của  boolean là boolean
+			     sysout("benta");
+			   biểu thức số học 1-2 biểu thức logic true false	  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
