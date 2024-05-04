@@ -1,0 +1,13 @@
+delimeter : là 1 kí tự (Chuỗi hoặc Tab) mong muốn là nguyên một chuỗi 
+token : (emty) 
+Viết 1 lớp tách các phần tử của một chuỗi
+Hiện thực 2 pt
+nextToken() lấy phần tử kế tiếp, nếu hết rồi thì sẽ exception => trả về phần tử rỗng hoặc là null
+hasMoreToken là cho chúng ta biết ít nhất còn lấy được nữa hay không
+
+Không được phép sử dung 
+StringTokenzier
+split
+
+Delimeter không phân biệt chữ hoa chữ thường
+
