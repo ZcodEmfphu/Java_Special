@@ -10,7 +10,7 @@ public class Ex3 {
 		boolean b = false;
 		boolean a = true;
 
-		if (b = true | a == true) {
+		if (b = true) {
 			System.out.println(1);
 		}
 		if (b) {
@@ -18,7 +18,7 @@ public class Ex3 {
 		} else {
 			System.out.println(3);
 		}
-//		System.out.println(b);
+		System.out.println(b);
 
 	}
 }

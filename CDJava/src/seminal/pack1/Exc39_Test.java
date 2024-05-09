@@ -2,9 +2,7 @@ package seminal.pack1;
 
 public class Exc39_Test extends Exc39 {
 
-	@Override
 	int test() {
-		// TODO Auto-generated method stub
 		return i;
 	}
 
