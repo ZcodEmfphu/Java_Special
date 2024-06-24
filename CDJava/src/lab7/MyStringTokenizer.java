@@ -27,7 +27,7 @@ public class MyStringTokenizer {
 
 	public boolean hasMoreToken() {
 //		return currentPosition < input.length();
-		return line.isEmpty();
+		return !line.isEmpty();
 
 	}
 
