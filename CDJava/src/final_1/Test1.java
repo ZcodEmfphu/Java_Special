@@ -24,6 +24,8 @@ public class Test1 {
 		int[][] arr3[];
 		int arr4[] = new int[5];
 
+		int[][] scores1 = { { 2, 4, 5 }, { 9, 3, 2 } };
+
 	}
 
 	public static void test3() {
