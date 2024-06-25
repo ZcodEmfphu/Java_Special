@@ -12,8 +12,8 @@ import java.util.TreeSet;
 
 public class Test2 {
 	static int i = 7; // ko quan trọng lắm
+	int x = 5;
 
-	private static int x = getValue();
 	private static final int y = 4;
 
 	public enum Alphabet { // important
@@ -23,14 +23,6 @@ public class Test2 {
 	public enum MyEnum {
 		A, B, C, D
 	};
-
-	public Test2() {
-		this(1);
-	}
-
-	public Test2(int i) {
-		this.i = i;
-	}
 
 	public static void test1() {
 		String test = "1a2b3c4d5";
@@ -55,9 +47,7 @@ public class Test2 {
 
 	public static void test3() {
 		int i = 12; // ưu tiên ở ngoài gần nó
-		Test2 test2 = new Test2(i);
-		test2.modify3();
-		System.out.println(i);
+
 	}
 
 	public static void test4() { // => false thì k in
@@ -189,18 +179,42 @@ public class Test2 {
 
 	}
 
+	public static void test19() {
+		float fl[], f2[];
+		float[] f1 = new float[10];
+
+		f2 = f1;
+
+		System.out.println("f2[0]= " + f2[0]);
+
+	}
+
+	public static void test20() {
+		int[][] a = { { 1, 2, 3 }, { 3, 4, 5 } };
+		int[] b = (int[]) a[1];
+		Object o1 = a;
+		int[][] a2 = (int[][]) o1;
+		int[] b2 = (int[]) o1;
+
+		System.out.println(b[1]);
+	}
+
+	public static void test21() {
+		final Test2 f1 = new Test2();
+		Test2 f2 = new Test2();
+		Test2 f3 = FizzSw(f1, f2);
+		System.out.println((f1 == f2) + " " + (f1.x != f3.x));
+	}
+
+	static Test2 FizzSw(Test2 x, Test2 y) {
+		final Test2 z = x;
+		z.x = 6;
+		return z;
+	}
+
 	public static void main(String[] args) {
 		test1();
-		test2();
-		test3();
-		test4();
-		test5();
-		test6();
-		test8();
-		test10();
-		test11();
-		test12();
-		test18();
+		test21();
 
 	}
 
